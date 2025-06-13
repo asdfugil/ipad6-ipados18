@@ -1,5 +1,5 @@
---- DeviceTree_ipad6_17.jsonc	2024-12-24 18:41:02.559086898 +0800
-+++ DeviceTree_ipad6_18.jsonc	2024-12-26 22:10:32.050244661 +0800
+--- DeviceTree_j72bap.jsonc	2025-06-13 13:39:51.760435192 +0800
++++ DeviceTree_j72bap_18.jsonc	2025-06-13 14:05:43.663462592 +0800
 @@ -65,10 +65,12 @@
           {"name": "display-boot-rotation", "length": 4, "flags": 0, "disp": 1, "value": 0 },
           {"name": "random-seed", "length": 64, "flags": 0, "disp": 3, "value": "" },
@@ -13,7 +13,16 @@
           {"name": "mac-address-ethernet0", "length": 30, "flags": 32768, "disp": 3, "value": "macaddr/ethaddr,syscfg/EMac/6" },
           {"name": "enclosure-material", "length": 12, "flags": 32768, "disp": 3, "value": "syscfg/EnMt" },
           {"name": "debug-enabled", "length": 4, "flags": 0, "disp": 1, "value": 0 },
-@@ -1602,6 +1604,47 @@
+@@ -967,7 +969,7 @@
+                  {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 63 },
+                  {"name": "function-reg_on", "length": 16, "flags": 0, "disp": 5, "value": "W\\x00\\x00\\x00OIPG\\x0e\\x00\\x00\\x00\\x01\\x01\\x00\\x00" },
+                  {"name": "wlan.dfsproxy.enabled", "length": 4, "flags": 0, "disp": 1, "value": 1 },
+-                 {"name": "module-instance", "length": 8, "flags": 0, "disp": 3, "value": "figarob" },
++                 {"name": "module-instance", "length": 8, "flags": 0, "disp": 3, "value": "rudderb" },
+                  {"name": "local-mac-address", "length": 40, "flags": 32768, "disp": 3, "value": "macaddr/wifiaddr,syscfg/WMac/6,zeroes/6" },
+                  {"name": "wlan.enhancedTrgDisc", "length": 4, "flags": 0, "disp": 1, "value": 1 },
+                  {"name": "bcom.ps.default", "length": 12, "flags": 0, "disp": 0, "value": "\\x03\\x00\\xc8\\x00\\x00\\x00\\x01\\x00\\xa0\\x0f\\x00\\x00" },
+@@ -1605,6 +1607,47 @@
               ],
           ],
           [
@@ -59,9 +68,9 @@
 +        ],
 +         [
               {"name": "function-motion_data_param_get", "length": 8, "flags": 0, "disp": 5, "value": "0\\x00\\x00\\x00Gtad" },
-              {"name": "function-saca0c", "length": 12, "flags": 0, "disp": 5, "value": "\\x9e\\x00\\x00\\x00ACAS4mac" },
-              {"name": "function-saca1b", "length": 12, "flags": 0, "disp": 5, "value": "\\x9e\\x00\\x00\\x00ACAS3mac" },
-@@ -2562,6 +2605,7 @@
+              {"name": "function-saca0c", "length": 12, "flags": 0, "disp": 5, "value": "\\xa1\\x00\\x00\\x00ACAS4mac" },
+              {"name": "function-saca1b", "length": 12, "flags": 0, "disp": 5, "value": "\\xa1\\x00\\x00\\x00ACAS3mac" },
+@@ -2631,6 +2674,7 @@
           {"name": "kern.io_throttle_window_tier3", "length": 4, "flags": 0, "disp": 1, "value": 100 },
           {"name": "data-journaling", "length": 0, "flags": 0 },
           {"name": "kern.memstat_idle_mb", "length": 4, "flags": 0, "disp": 1, "value": 307 },
@@ -69,15 +78,15 @@
           {"name": "use-lwvm", "length": 0, "flags": 0 },
           {"name": "sep-size", "length": 4, "flags": 0, "disp": 1, "value": 12582912 },
           {"name": "trm-enabled", "length": 4, "flags": 0, "disp": 1, "value": 1 },
-@@ -2596,6 +2640,7 @@
+@@ -2667,6 +2711,7 @@
           {"name": "name", "length": 8, "flags": 0, "disp": 3, "value": "product" },
           {"name": "disable-globe-map", "length": 0, "flags": 0 },
           {"name": "artwork-device-idiom", "length": 4, "flags": 0, "disp": 3, "value": "pad" },
 +         {"name": "has-virtualization", "length": 4, "flags": 0, "disp": 1, "value": 1 },
           {"name": "device-color-policy", "length": 4, "flags": 0, "disp": 1, "value": 0 },
           {"name": "graphics-featureset-class", "length": 7, "flags": 0, "disp": 3, "value": "APPLE3" },
-          {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 160 },
-@@ -2630,6 +2675,8 @@
+          {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 163 },
+@@ -2703,6 +2748,8 @@
           {"name": "artwork-device-subtype", "length": 4, "flags": 0, "disp": 1, "value": 0 },
           {"name": "primary-calibration-matrix", "length": 40, "flags": 0, "disp": 3, "value": "" },
           {"name": "display-temp-compensation", "length": 12, "flags": 32768, "disp": 3, "value": "syscfg/DTCl" },
@@ -86,7 +95,7 @@
           [
               {"name": "rear-slowmo", "length": 4, "flags": 0, "disp": 1, "value": 1 },
               {"name": "rear-max-video-zoom", "length": 4, "flags": 0, "disp": 1, "value": 3 },
-@@ -2674,6 +2721,9 @@
+@@ -2751,6 +2798,9 @@
           [
               {"name": "wireless-splitter", "length": 4, "flags": 0, "disp": 1, "value": 1 },
               {"name": "supports-always-listening", "length": 4, "flags": 0, "disp": 1, "value": 1 },
@@ -94,11 +103,11 @@
 +             {"name": "supports-auto-mic-mode", "length": 4, "flags": 0, "disp": 1, "value": 0 },
 +             {"name": "supports-advanced-vp-chatflavor", "length": 4, "flags": 0, "disp": 1, "value": 1 },
               {"name": "name", "length": 6, "flags": 0, "disp": 3, "value": "audio" },
-              {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 164 },
+              {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 167 },
           ],
-@@ -2907,6 +2957,12 @@
+@@ -3006,6 +3056,12 @@
                   {"name": "property_name", "length": 27, "flags": 0, "disp": 3, "value": "disable-accessory-firmware" },
-                  {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 192 },
+                  {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 197 },
               ],
 +             [
 +                 {"name": "value", "length": 4, "flags": 0, "disp": 1, "value": 1 },
@@ -109,22 +118,20 @@
           ],
           [
               {"name": "name", "length": 24, "flags": 0, "disp": 3, "value": "diagnostics-environment" },
-@@ -2977,7 +3033,47 @@
-                  {"name": "property_name", "length": 19, "flags": 0, "disp": 3, "value": "sepfw-load-at-boot" },
-                  {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 204 },
+@@ -3077,6 +3133,46 @@
+                  {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 209 },
               ],
+          ],
 +         [
 +             {"name": "name", "length": 27, "flags": 0, "disp": 3, "value": "macos-darwinos-environment" },
 +             {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 215 },
-+             [
++            [
 +                 {"name": "value", "length": 4, "flags": 0, "disp": 1, "value": 4 },
 +                 {"name": "name", "length": 23, "flags": 0, "disp": 3, "value": "set-macos-darwinos-env" },
 +                 {"name": "property_name", "length": 30, "flags": 0, "disp": 3, "value": "darwinos-security-environment" },
 +                 {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 216 },
-+             ],
-          ],
--     ],
--],
++            ],
++         ],
 +         [
 +             {"name": "name", "length": 30, "flags": 0, "disp": 3, "value": "embedded-darwinos-environment" },
 +             {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 217 },
@@ -155,7 +162,7 @@
 +                 {"name": "AAPL,phandle", "length": 4, "flags": 0, "disp": 1, "value": 222 },
 +             ],
 +         ],
-+    ],
-+    ],
-+    ],
+      ],
+ ],
  }
+\ 檔案末沒有 newline 字元

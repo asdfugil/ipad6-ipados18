@@ -229,15 +229,14 @@ Run commands on the host
 devicetree-parse: https://github.com/khanhduytran0/devicetree-parse
 submodule: `projects/devicetree-parse`
 
-Wi-Fi model: DeviceTree.j71bap.im4p
-Cellular model: DeviceTree.j72bap.im4p
-Unpack and patch device tree with the included `device-tree.diff`
+Wi-Fi model: DeviceTree.j71bap.im4p, diff file `dt-j71bap.diff`
+Cellular model: DeviceTree.j72bap.im4p, diff file `dt-j72bap.diff`
+Unpack and patch device tree with the diff file
 
 ```
 img4 -i /path/to/iPad_64bit_TouchID_Restore/Firmware/all_flash/DeviceTree.j71bap.im4p -o DeviceTree
 devicetree-parse DeviceTree > DeviceTree_j71bap.jsonc
-patch DeviceTree_j71bap.jsonc device-tree.diff
-sed -i -e 's|figaro|rudder|' DeviceTree_j71bap.jsonc
+patch DeviceTree_j71bap.jsonc dt-j71bap.diff
 ```
 
 ### Wrapping up files
