@@ -346,6 +346,14 @@ cellular models will need to be already setup due to baseband issues. Due to the
 downgrade the iPad will use iPadOS 17 wallpaper by default. iPadOS 18 wallpaper is available
 online in Settings after the device has been set up.
 
+For the cellular model, disable CommCenter using palera1n's internal SSH to improve system
+stability since baseband will not work anyways:
+
+```
+launchctl disable system/com.apple.CommCenter
+launchctl unload /System/Library/LaunchDaemons/com.apple.CommCenter.plist
+```
+
 ## Credits
 
 - [Turdus M3rula](https://github.com/turdus-m3rula) - SEP firmware loader
