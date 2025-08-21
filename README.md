@@ -22,6 +22,18 @@ pongoterm (pongoOS terminal): https://github.com/palera1n/PongoOS/blob/iOS15/scr
 - "Erase All Contents and Settings" will cause a bootloop
 - Baseband, and by extension Cellular model activation does not work (so setup the cellular model before starting the process)
 
+## Compile pongoterm
+
+IOKit backend (macOS):
+```
+clang -Os -x objective-c -framework IOKit -framework CoreFoundation pongoterm.c -lobjc -framework Foundation -o pongoterm
+```
+
+libusb backend:
+```
+clang -Os pongoterm.c -DUSE_LIBUSB -lusb-1.0 -o pongoterm
+```
+
 ## Build palera1n KPF
 
 palera1n KPF: https://github.com/palera1n/PongoOS `ios18.4` branch (with cryptex patches)

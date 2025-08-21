@@ -1,2 +1,5 @@
+projects/devicetree-parse/devicetree-parse
+projects/devicetree-parse/devicetree-repack
+projects/devicetree-parse/*.o
 .DS_Store
 
