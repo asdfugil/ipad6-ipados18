@@ -36,7 +36,7 @@ clang -Os pongoterm.c -DUSE_LIBUSB -lusb-1.0 -o pongoterm
 
 ## Build palera1n KPF
 
-palera1n KPF: https://github.com/palera1n/PongoOS `ios18.4` branch (with cryptex patches)
+palera1n KPF: https://github.com/palera1n/PongoOS `iOS15` branch (with cryptex patches)
 submodule: `projects/PongoOS-KPF`
 
 ```
@@ -314,7 +314,7 @@ mv kernelcache kernelcache.bak
 
 ## Build the boot ramdisks
 
-https://github.com/palera1n/jbinit `ios18.4` branch
+https://github.com/palera1n/jbinit `main` branch
 submodule: `projects/jbinit`
 
 https://static.palera.in/binpack.tar
