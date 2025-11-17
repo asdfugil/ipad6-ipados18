@@ -36,6 +36,9 @@ clang -Os pongoterm.c -DUSE_LIBUSB -lusb-1.0 -o pongoterm
 
 ## Build palera1n KPF
 
+> [!TIP]
+> Precompiled [checkra1n-kpf-pongo](https://github.com/asdfugil/ipad6-ipados18/releases/download/2025.11.17/checkra1n-kpf-pongo)
+
 palera1n KPF: https://github.com/palera1n/PongoOS `iOS15` branch (with cryptex patches)
 submodule: `projects/PongoOS-KPF`
 
@@ -45,6 +48,9 @@ gmake -j10 DEV_BUILD=1
 ```
 
 ## Build Turdus PongoOS
+
+> [!TIP]
+> Precompiled [Pongo.bin](https://github.com/asdfugil/ipad6-ipados18/releases/download/2025.11.17/Pongo.bin)
 
 Turdus PongoOS: https://github.com/turdus-m3rula/PongoOS
 submodule: `projects/PongoOS-Turdus`
@@ -313,6 +319,9 @@ mv kernelcache kernelcache.bak
 ```
 
 ## Build the boot ramdisks
+
+> [!TIP]
+> Precompiled [ramdisk.dmg](https://github.com/asdfugil/ipad6-ipados18/releases/download/2025.11.17/ramdisk.dmg) and [binpack.dmg](https://github.com/asdfugil/ipad6-ipados18/releases/download/2025.11.17/binpack.dmg)
 
 https://github.com/palera1n/jbinit `main` branch
 submodule: `projects/jbinit`
