@@ -213,7 +213,7 @@ mount_apfs -o ro /dev/disk1s1 /mnt1
 ### Add iPad 6 specific files
 
 ```
-find /mnt1 -iregex '.*j7[[1-2]b.*' -type f -exec /bin/sh -c 'dirname="$(echo "{}" | sed -E '\''s|^/mnt1(/.+)/.+$|\1|'\'')"; filename="$(echo "{}" | sed -E '\''s|/mnt1/.+/(.+)$|\1|'\'')"; mkdir -p "/mnt8/${dirname}"; cp -an "{}" "/mnt8/${dirname}/${filename}";' \;
+find /mnt1 -iregex '.*j7[1-2]b.*' -type f -exec /bin/sh -c 'dirname="$(echo "{}" | sed -E '\''s|^/mnt1(/.+)/.+$|\1|'\'')"; filename="$(echo "{}" | sed -E '\''s|/mnt1/.+/(.+)$|\1|'\'')"; mkdir -p "/mnt8/${dirname}"; cp -an "{}" "/mnt8/${dirname}/${filename}";' \;
 
 ln -s J171.Default.plist /mnt8/System/Library/EventTimingProfiles/J71b.Default.plist
 ln -s J171.Touch.plist /mnt8/System/Library/EventTimingProfiles/J71b.Touch.plist
