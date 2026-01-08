@@ -231,6 +231,9 @@ cp -a /mnt1/Library/Wallpaper /mnt8/Library
 
 mv /mnt8/Library/Audio/Plug-Ins{,.bak}
 cp -a /mnt1/Library/Audio/Plug-Ins /mnt8/Library/Audio
+
+mv /mnt8/usr/sbin/BlueTool{,.bak}
+cp -a /mnt1/usr/sbin/BlueTool /mnt8/usr/sbin
 ```
 
 ### Patch RootFS and wrap up
